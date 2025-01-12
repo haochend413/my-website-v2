@@ -17,7 +17,7 @@ function Experiencepage() {
       <Item
         onClick={() => 1}
         align={0}
-        imglink={"_images/PID_HGV_1.png"}
+        imglink={"PID_HGV_1.png"}
         imgname={"PID_HGV"}
         project_title={"PID AGV"}
         project_description={
@@ -28,7 +28,7 @@ function Experiencepage() {
       <Item
         onClick={() => 1}
         align={1}
-        imglink={"_images/FFT_Calculator_1.png"}
+        imglink={"FFT_Calculator_1.png"}
         imgname={"FFT"}
         project_title={"FFT Calculator"}
         project_description={
@@ -39,7 +39,7 @@ function Experiencepage() {
       <Item
         onClick={() => 1}
         align={0}
-        imglink={"_images/MBSe MTT.jpg"}
+        imglink={"MBSe MTT.jpg"}
         imgname={"MTT"}
         project_title={
           "Synthesis of MBSe and Application in Photodynamic Therapy"
