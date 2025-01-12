@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // Use this to export as a static site
+  //output: "export",
   eslint: {
     ignoreDuringBuilds: true, // Ignore ESLint during build process
   },
