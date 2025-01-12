@@ -17,18 +17,18 @@ function Experiencepage() {
       <Item
         onClick={() => 1}
         align={0}
-        imglink={"PID_HGV_1.png"}
+        imglink={"/PID_HGV_1.png"}
         imgname={"PID_HGV"}
         project_title={"PID AGV"}
         project_description={
           "Using hardware components to achieve obstacle sensing and smooth speed change. (ECE 198)"
         }
-        Project_link={"_files/ECE_198_Final_Report.pdf"}
+        Project_link={"/ECE_198_Final_Report.pdf"}
       />
       <Item
         onClick={() => 1}
         align={1}
-        imglink={"FFT_Calculator_1.png"}
+        imglink={"/FFT_Calculator_1.png"}
         imgname={"FFT"}
         project_title={"FFT Calculator"}
         project_description={
@@ -39,7 +39,7 @@ function Experiencepage() {
       <Item
         onClick={() => 1}
         align={0}
-        imglink={"MBSe MTT.jpg"}
+        imglink={"/MBSe MTT.jpg"}
         imgname={"MTT"}
         project_title={
           "Synthesis of MBSe and Application in Photodynamic Therapy"
@@ -48,7 +48,7 @@ function Experiencepage() {
           "synthesized MBSe photosensitizer and studied its therapeutic effects on cancer cells and simulated tumor organisms."
         }
         Project_link={
-          "_files/Synthesis of Selenomethylene Blue and its Application in Type I, II Photodynamic Therapy.pdf"
+          "/Synthesis of Selenomethylene Blue and its Application in Type I, II Photodynamic Therapy.pdf"
         }
       />
     </>

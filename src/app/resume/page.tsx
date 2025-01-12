@@ -6,7 +6,7 @@ function Experiencepage() {
       <h1 className="section-title">Resume & Websites</h1>
       <p className="box">
         <a
-          href="Resume.pdf" //why??
+          href="/Resume.pdf" //why??
           target="_blank"
           rel="noopener noreferrer"
         >

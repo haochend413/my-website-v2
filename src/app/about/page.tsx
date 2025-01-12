@@ -9,7 +9,7 @@ function Aboutpage() {
         Urbana-Champaign. I am currently pursuing a Bachelor's Degree in
         Computer Engineering. Nice to meet you all!
       </p>
-      <img src="Homepage_Background.jpg" alt="me" className="img_style" />
+      <img src="/Homepage_Background.jpg" alt="me" className="img_style" />
     </>
   );
 }
