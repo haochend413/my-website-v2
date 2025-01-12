@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Ignore ESLint during build process
   },
-  basePath: "/my-website-v2", // Only needed if deploying to a subdirectory
+  // basePath: "/my-website-v2",
   trailingSlash: true, // Optional: ensures URLs end with a trailing slash
 };
 
