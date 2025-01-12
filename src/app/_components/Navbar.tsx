@@ -1,5 +1,6 @@
 "use client";
 
+import styles from "./components.module.css";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -28,7 +29,9 @@ export default function Navbar() {
       {buttons.map(({ label, route }, index) => (
         <button
           key={index}
-          className={`button ${activeButton === route ? "active" : ""}`}
+          className={`${styles.button} ${
+            activeButton === route ? styles.active : ""
+          }`}
           onClick={() => handleButtonClick(route)}
         >
           {label}

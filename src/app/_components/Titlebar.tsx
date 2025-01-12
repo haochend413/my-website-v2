@@ -1,6 +1,5 @@
 "use client";
-
-import { React } from "react";
+import styles from "./components.module.css";
 import { useRouter } from "next/navigation";
 
 function TitleBar() {
@@ -12,13 +11,13 @@ function TitleBar() {
   but I am lazy. */
 
   const title_onclick_redirect = () => {
-    const buttons = document.querySelectorAll(".button");
-    buttons.forEach((btn) => btn.classList.remove("active"));
+    const buttons = document.querySelectorAll("styles.button");
+    buttons.forEach((btn) => btn.classList.remove("styles.active"));
     router.push("/");
   };
   return (
-    <div className="navContainer">
-      <h1 className="pagetitle" onClick={title_onclick_redirect}>
+    <div>
+      <h1 className={styles.title} onClick={title_onclick_redirect}>
         Haochen Ding's Website
       </h1>
     </div>

@@ -1,0 +1,27 @@
+/* Title bar */
+.title {
+  height: 30px;
+  font-size: 140%;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(229, 229, 236);
+  background-color: #030119;
+}
+
+/* Nav bar */
+.button {
+  height: auto;
+  width: 120px;
+  font-family: Cambria;
+  background-color: #030119;
+  color: white;
+  cursor: pointer;
+}
+.button.active {
+  height: auto;
+  width: 120px;
+  font-family: Cambria;
+  background-color: yellow;
+  color: black;
+}
