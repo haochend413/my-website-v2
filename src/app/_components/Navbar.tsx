@@ -4,11 +4,18 @@ import styles from "./components.module.css";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Navbar() {
+interface NavProps {
+  activeButton: string;
+  setActiveButton: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Navbar: React.FC<NavProps> = ({
+  activeButton,
+  setActiveButton,
+}: NavProps) => {
   // Next useRouter;
   const router = useRouter();
   // State to track the active button
-  const [activeButton, setActiveButton] = useState("");
 
   const handleButtonClick = (route: string) => {
     setActiveButton(route);
@@ -39,4 +46,6 @@ export default function Navbar() {
       ))}
     </nav>
   );
-}
+};
+
+export default Navbar;

@@ -2,7 +2,11 @@
 import styles from "./components.module.css";
 import { useRouter } from "next/navigation";
 
-function TitleBar() {
+type TitleBarProps = {
+  setActiveButton: React.Dispatch<React.SetStateAction<string>>;
+};
+
+function TitleBar({ setActiveButton }: TitleBarProps) {
   const router = useRouter();
 
   /* this is not the best way; the best implementation, 
@@ -11,10 +15,10 @@ function TitleBar() {
   but I am lazy. */
 
   const title_onclick_redirect = () => {
-    const buttons = document.querySelectorAll("styles.button");
-    buttons.forEach((btn) => btn.classList.remove("styles.active"));
+    setActiveButton("none");
     router.push("/");
   };
+
   return (
     <div>
       <h1 className={styles.title} onClick={title_onclick_redirect}>

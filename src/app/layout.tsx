@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
-import Navbar from "./_components/Navbar";
-import Titlebar from "./_components/Titlebar";
+import Head from "./_components/Head";
 import "./global.css";
 
 // const geistSans = Geist({
@@ -28,8 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Titlebar />
-        <Navbar />
+        <Head />
         {children}
       </body>
     </html>
