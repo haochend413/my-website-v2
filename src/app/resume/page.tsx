@@ -3,7 +3,6 @@ import React from "react";
 function Experiencepage() {
   return (
     <>
-      <h1 className="section-title">Resume & Websites</h1>
       <p className="box">
         <a
           href="/Resume.pdf" //why??

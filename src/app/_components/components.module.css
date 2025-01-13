@@ -10,6 +10,12 @@
 }
 
 /* Nav bar */
+.navbar {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   height: auto;
   width: 120px;

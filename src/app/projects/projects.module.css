@@ -1,0 +1,8 @@
+.gallery-container {
+  display: flex; /* Flex container behavior */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 15px; /* Space between items */
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+}

@@ -25,7 +25,7 @@ export default function Navbar() {
 
   //maping data to structure
   return (
-    <nav className="navT">
+    <nav className={styles.navbar}>
       {buttons.map(({ label, route }, index) => (
         <button
           key={index}

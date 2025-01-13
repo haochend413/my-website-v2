@@ -1,0 +1,14 @@
+.image {
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
+  place-items: center;
+  display: block;
+  border: 5px solid;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 48);
+}
+
+.image:hover {
+  border-color: rgb(0, 38, 41);
+}
