@@ -7,8 +7,30 @@
   text-align: center;
   color: rgb(229, 229, 236);
   background-color: #030119;
+  animation: colorChange 5s infinite linear; /* Apply animation */
 }
 
+.title:hover {
+  cursor: pointer;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #2020ff;
+  } /* Blue */
+  25% {
+    color: #37afff;
+  } /* Light Blue */
+  50% {
+    color: #83e6ff;
+  } /* Cyan */
+  75% {
+    color: #0066ff;
+  } /* Medium Blue */
+  100% {
+    color: #2020ff;
+  } /* Back to Blue */
+}
 /* Nav bar */
 .navbar {
   text-align: center;
@@ -23,6 +45,9 @@
   background-color: #030119;
   color: white;
   cursor: pointer;
+}
+.button:hover {
+  color: yellow;
 }
 .button.active {
   height: auto;
