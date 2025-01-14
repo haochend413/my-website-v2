@@ -16,19 +16,19 @@
 
 @keyframes colorChange {
   0% {
-    color: #2020ff;
+    color: #83e6ff;
   } /* Blue */
   25% {
     color: #37afff;
   } /* Light Blue */
   50% {
-    color: #83e6ff;
+    color: #3557ff;
   } /* Cyan */
   75% {
     color: #0066ff;
   } /* Medium Blue */
   100% {
-    color: #2020ff;
+    color: #83e6ff;
   } /* Back to Blue */
 }
 /* Nav bar */
@@ -53,6 +53,6 @@
   height: auto;
   width: 120px;
   font-family: Cambria;
-  background-color: yellow;
+  background-color: rgb(255, 255, 0);
   color: black;
 }

@@ -3,16 +3,6 @@ import type { Metadata } from "next";
 import Head from "./_components/Head";
 import "./global.css";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 //I suppose here it handles discription and title
 export const metadata: Metadata = {
   title: "Hello, visitors!",

@@ -2,6 +2,7 @@
 
 import Item from "./_components/experience-item";
 import styles from "./projects.module.css";
+import { useRouter } from "next/navigation";
 
 function Experiencepage() {
   return (
@@ -12,11 +13,11 @@ function Experiencepage() {
         seeking for opportunities in ECE related fields.
       </p>
 
-      {/* align, imglink, imgname, project_title, project_description, Project_link */}
+      {/* align, imglink, imgname, project_title, project_description, link*/}
       {/* this can be done with .map() function; */}
       <div className={styles["gallery-container"]}>
         <Item
-          onClick={() => 1}
+          link="/ECE_198_Final_Report.pdf"
           align={0}
           imglink={"/PID_HGV_1.png"}
           imgname={"PID_HGV"}
@@ -24,10 +25,9 @@ function Experiencepage() {
           project_description={
             "Using hardware components to achieve obstacle sensing and smooth speed change. (ECE 198)"
           }
-          Project_link={"/ECE_198_Final_Report.pdf"}
         />
         <Item
-          onClick={() => 1}
+          link="https://github.com/haochend413/FFT-Calculator"
           align={1}
           imglink={"/FFT_Calculator_1.png"}
           imgname={"FFT"}
@@ -35,10 +35,9 @@ function Experiencepage() {
           project_description={
             "Rust-based FFT calculator with SIMD and multithread optimization (CS 199-128)"
           }
-          Project_link={"https://github.com/haochend413/FFT-Calculator"}
         />
         <Item
-          onClick={() => 1}
+          link="/Synthesis of Selenomethylene Blue and its Application in Type I, II Photodynamic Therapy.pdf"
           align={0}
           imglink={"/MBSe MTT.jpg"}
           imgname={"MTT"}
@@ -47,9 +46,6 @@ function Experiencepage() {
           }
           project_description={
             "Synthesized MBSe photosensitizer and studied its therapeutic effects."
-          }
-          Project_link={
-            "/Synthesis of Selenomethylene Blue and its Application in Type I, II Photodynamic Therapy.pdf"
           }
         />
       </div>
