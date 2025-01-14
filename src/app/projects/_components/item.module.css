@@ -1,6 +1,6 @@
 .gallery-item {
   border: 5px solid;
-  border-color: rgb(2, 54, 69);
+  border-color: rgb(9, 0, 61);
   background-color: #000000;
   border-radius: 10px;
   padding: 15px;
@@ -10,7 +10,7 @@
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   width: calc(
-    18%
+    30%
   ); /* Ensures the item takes proper width with gap adjustment */
 }
 
@@ -28,4 +28,15 @@
   height: 150px; /* Fixed height for image */
   object-fit: cover; /* Ensures the image covers the space without distortion */
   border-radius: 5px;
+}
+
+.textbox {
+  margin: 20px;
+}
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
+  font-size: 20px;
+  font-weight: 100;
+  margin: 20px;
 }

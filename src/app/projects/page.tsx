@@ -41,9 +41,7 @@ function Experiencepage() {
           align={0}
           imglink={"/MBSe MTT.jpg"}
           imgname={"MTT"}
-          project_title={
-            "Synthesis of MBSe and Application in Photodynamic Therapy"
-          }
+          project_title={"MBSe Synthesis & Appl"}
           project_description={
             "Synthesized MBSe photosensitizer and studied its therapeutic effects."
           }

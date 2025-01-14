@@ -15,20 +15,20 @@ function Experiencepage() {
       <div className={styles["gallery-container"]}>
         <Item
           link="/Resume.pdf"
-          imglink={"/PID_HGV_1.png"}
-          imgname={"PID_HGV"}
+          imglink={"/cv.png"}
+          imgname={"cv"}
           title={"CV"}
         />
         <Item
           link="https://github.com/haochend413/"
-          imglink={"/FFT_Calculator_1.png"}
-          imgname={"FFT"}
+          imglink={"/github.png"}
+          imgname={"github"}
           title={"Github"}
         />
         <Item
           link="https://www.linkedin.com/in/hcd413/"
-          imglink={"/MBSe MTT.jpg"}
-          imgname={"MTT"}
+          imglink={"/linkedin.png"}
+          imgname={"linkedin"}
           title={"LinkedIn"}
         />
       </div>

@@ -27,16 +27,20 @@ const item: React.FC<itemprops> = ({
     return (
       <div className={styles["gallery-item"]} onClick={() => handleClick(link)}>
         <img src={imglink} alt={imgname} />
-        <h3>{project_title}</h3>
-        <p>{project_description}</p>
+        <div className={styles.textbox}>
+          <h3 className={styles.title}>{project_title}</h3>
+          <p>{project_description}</p>
+        </div>
       </div>
     );
   } else {
     return (
       <div className={styles["gallery-item"]} onClick={() => handleClick(link)}>
         <img src={imglink} alt={imgname} />
-        <h3>{project_title}</h3>
-        <p>{project_description}</p>
+        <div className={styles.textbox}>
+          <h3 className={styles.title}>{project_title}</h3>
+          <p>{project_description}</p>
+        </div>
       </div>
     );
   }

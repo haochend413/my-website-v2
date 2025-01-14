@@ -17,7 +17,7 @@ const item: React.FC<itemprops> = ({ link, imglink, imgname, title }) => {
   return (
     <div className={styles["gallery-item"]} onClick={() => handleClick(link)}>
       <img src={imglink} alt={imgname} />
-      <h3>{title}</h3>
+      <h3 className={styles.title}>{title}</h3>
     </div>
   );
 };
