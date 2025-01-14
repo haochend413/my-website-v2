@@ -18,8 +18,10 @@
 .gallery-item:hover {
   transform: scale(0.95); /* Slight zoom effect */
   border-color: rgb(9, 178, 225);
+  .title {
+    color: yellow;
+  }
 }
-
 /* Image styling inside the gallery item */
 .gallery-item img {
   align-items: center; /* Vertically center the image */
