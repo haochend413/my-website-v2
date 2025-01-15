@@ -9,6 +9,7 @@ import { Ubuntu } from "next/font/google";
 // Use the font as a className in your components
 const ubuntu = Ubuntu({
   weight: ["300", "700"],
+  subsets: ["latin"],
 });
 
 //I suppose here it handles discription and title
