@@ -8,6 +8,7 @@
   color: rgb(229, 229, 236);
   background-color: #030119;
   animation: colorChange 5s infinite linear; /* Apply animation */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .title:hover {
