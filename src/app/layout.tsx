@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 
 import Head from "./_components/Head";
 import "./global.css";
-
-// pages/_app.js
 import { Ubuntu } from "next/font/google";
 
 // Use the font as a className in your components
