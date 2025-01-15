@@ -7,7 +7,7 @@
   text-align: center;
   color: rgb(229, 229, 236);
   background-color: #030119;
-  animation: colorChange 5s infinite linear; /* Apply animation */
+  animation: colorChangeTitle 5s infinite linear; /* Apply animation */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -15,12 +15,12 @@
   cursor: pointer;
 }
 
-@keyframes colorChange {
+@keyframes colorChangeTitle {
   0% {
     color: #83e6ff;
   } /* Blue */
   25% {
-    color: #37afff;
+    color: #37fff5;
   } /* Light Blue */
   50% {
     color: #3557ff;
@@ -50,6 +50,23 @@
 .button:hover {
   color: yellow;
 }
+.button:active {
+  height: auto;
+  width: 120px;
+  font-family: Cambria;
+  background-color: yellow;
+  color: black;
+}
+
+@keyframes colorChangeButton {
+  0% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: rgba(255, 255, 0, 0.197);
+  }
+}
+
 .button.active {
   height: auto;
   width: 120px;
