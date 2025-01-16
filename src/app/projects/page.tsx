@@ -7,11 +7,13 @@ import { useRouter } from "next/navigation";
 function Experiencepage() {
   return (
     <>
-      <p className="box">
-        I am keen on participating in projects, academic researches and
-        internships to improve my skills and widen my horizon. I am currently
-        seeking for opportunities in ECE related fields.
-      </p>
+      <div className={styles["textbox"]}>
+        <p className={styles["typewriter"]}>
+          : &nbsp; I am keen on participating in projects, academic researches
+          and internships to improve my skills and widen my horizon. I am
+          currently seeking for opportunities in ECE related fields.
+        </p>
+      </div>
 
       {/* align, imglink, imgname, project_title, project_description, link*/}
       {/* this can be done with .map() function; */}

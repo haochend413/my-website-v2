@@ -12,3 +12,52 @@
 .image:hover {
   border-color: rgb(0, 38, 41);
 }
+
+.textbox {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100%;
+  justify-content: center;
+  color: rgb(13, 255, 0);
+  padding-left: 5px;
+  box-sizing: border-box;
+  border: 1px transparent solid;
+}
+
+.textbox:hover {
+  border: rgb(74, 74, 74) 1px solid;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  text-align: left; /* Ensures the text is aligned to the left */ /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(40, end);
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+section:nth-child(1) .typewriter {
+  animation-delay: 2s; /* First one appears immediately */
+}
+
+section:nth-child(2) .typewriter {
+  animation-delay: 3.5s; /* Second one starts after 3.5s */
+}
+
+section:nth-child(3) .typewriter {
+  animation-delay: 7s; /* Third one starts after 7s */
+}
+
+section:nth-child(4) .typewriter {
+  animation-delay: 10.5s; /* Fourth one starts after 10.5s */
+}

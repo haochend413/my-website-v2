@@ -4,11 +4,24 @@ import styles from "./about.module.css";
 function Aboutpage() {
   return (
     <>
-      <p className="box">
-        My name is Haochen Ding. I am a Sophomore in University of Illinois,
-        Urbana-Champaign. I am currently pursuing a Bachelor's Degree in
-        Computer Engineering. Nice to meet you all!
-      </p>
+      <div className={styles["textbox"]}>
+        <p className={styles["typewriter"]}>: &nbsp;My name is Haochen Ding.</p>
+      </div>
+      <div className={styles["textbox"]}>
+        <p className={styles["typewriter"]}>
+          : &nbsp;I am a Sophomore in University of Illinois, Urbana-Champaign.
+        </p>
+      </div>
+      <div className={styles["textbox"]}>
+        <p className={styles["typewriter"]}>
+          : &nbsp;I am currently pursuing a Bachelor's Degree in Computer
+          Engineering.
+        </p>
+      </div>
+      <div className={styles["textbox"]}>
+        <p className={styles["typewriter"]}>: &nbsp;Nice to meet you all!</p>
+      </div>
+
       <img src="/Homepage_Background.jpg" alt="me" className={styles.image} />
     </>
   );

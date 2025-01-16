@@ -7,3 +7,41 @@
   margin-right: 20px;
   margin-top: 40px;
 }
+
+/************ textbox **************/
+
+.textbox {
+  margin: 10px; /* Simplified margin shorthand */
+  height: 60px; /* Allow height to adjust to content */
+  justify-content: center; /* Center the content horizontally */
+  color: rgb(13, 255, 0); /* Text color */
+  padding-left: 5px; /* Padding for left alignment */
+  box-sizing: border-box; /* Include padding and border in the element's width/height */
+  border: 1px transparent solid; /* Transparent border */
+  display: block; /* Ensure the element takes up full width and breaks to a new line */
+  word-wrap: break-word; /* Allow content to wrap if it's too long */
+  overflow: hidden; /* Prevent content overflow */
+  white-space: normal; /* Allow wrapping of text within the container */
+  overflow-wrap: break-word; /* Allows breaking words at appropriate points */
+  word-break: break-word; /* For compatibility with older browsers */
+}
+
+.textbox:hover {
+  border: rgb(74, 74, 74) 1px solid;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  display: inline-block; /* Ensures the content takes up only necessary space */
+  text-align: left; /* Ensures the text is aligned to the left */ /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 100%; /* Expand to full width of the container */
+  }
+}
