@@ -9,8 +9,8 @@ function Experiencepage() {
     <>
       <div className={styles["textbox"]}>
         <p className={styles["typewriter"]}>
-          : &nbsp; I am keen on participating in projects, academic researches
-          and internships to improve my skills and widen my horizon.
+          : &nbsp; I am keen on participating in projects, academic research and
+          internships to improve my skills and widen my horizon.
         </p>
         <p className={styles["typewriter"]}>
           : &nbsp; I am currently seeking for opportunities in ECE related
