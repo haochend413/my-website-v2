@@ -51,6 +51,22 @@ function Experiencepage() {
             "Synthesized MBSe photosensitizer and studied its therapeutic effects."
           }
         />
+        <Item
+          link="https://github.com/haochend413/personal_website"
+          align={1}
+          imglink={"/website-v1.png"}
+          imgname={"website-v1"}
+          project_title={"Personal Website V1"}
+          project_description={"V1 website with React & JS"}
+        />
+        <Item
+          link="https://github.com/haochend413/my-website-v2"
+          align={0}
+          imglink={"/website-v2.png"}
+          imgname={"website-v2"}
+          project_title={"Personal Website V2"}
+          project_description={"V2 website with Next.js, React and Vercel"}
+        />
       </div>
     </>
   );
