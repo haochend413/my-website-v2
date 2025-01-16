@@ -44,7 +44,7 @@ function Experiencepage() {
         <Item
           link="/Synthesis of Selenomethylene Blue and its Application in Type I, II Photodynamic Therapy.pdf"
           align={0}
-          imglink={"/MBSe MTT.jpg"}
+          imglink={"/MBSe MTT.png"}
           imgname={"MTT"}
           project_title={"MBSe Synthesis & Appl"}
           project_description={
