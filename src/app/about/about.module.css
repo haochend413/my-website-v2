@@ -80,3 +80,7 @@
 .textbox p:nth-child(4) {
   animation-delay: 4.2s; /* Delay the fourth paragraph by 0.9s */
 }
+
+.textbox p:nth-child(5) {
+  animation-delay: 5.2s; /* Delay the fourth paragraph by 0.9s */
+}

@@ -14,6 +14,9 @@ function Aboutpage() {
           Engineering.
         </p>
         <p className={styles["typewriter"]}>: &nbsp;Nice to meet you all!</p>
+        <p className={styles["typewriter"]}>
+          : &nbsp; Contact: hd9@illinois.edu
+        </p>
       </div>
 
       <img src="/Homepage_Background.jpg" alt="me" className={styles.image} />
