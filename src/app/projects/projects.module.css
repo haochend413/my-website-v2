@@ -11,37 +11,61 @@
 /************ textbox **************/
 
 .textbox {
-  margin: 10px; /* Simplified margin shorthand */
-  height: 60px; /* Allow height to adjust to content */
-  justify-content: center; /* Center the content horizontally */
-  color: rgb(13, 255, 0); /* Text color */
-  padding-left: 5px; /* Padding for left alignment */
-  box-sizing: border-box; /* Include padding and border in the element's width/height */
-  border: 1px transparent solid; /* Transparent border */
-  display: block; /* Ensure the element takes up full width and breaks to a new line */
-  word-wrap: break-word; /* Allow content to wrap if it's too long */
-  overflow: hidden; /* Prevent content overflow */
-  white-space: normal; /* Allow wrapping of text within the container */
-  overflow-wrap: break-word; /* Allows breaking words at appropriate points */
-  word-break: break-word; /* For compatibility with older browsers */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100%;
+  justify-content: center;
+
+  color: rgb(13, 255, 0);
+  padding-left: 5px;
+  box-sizing: border-box;
 }
 
-.textbox:hover {
-  border: rgb(74, 74, 74) 1px solid;
+.textbox p {
+  border: 1px transparent solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.textbox p:hover {
+  border: 1px rgb(74, 74, 74), solid;
 }
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  display: inline-block; /* Ensures the content takes up only necessary space */
+  white-space: nowrap; /* Keeps the content on a single line */
   text-align: left; /* Ensures the text is aligned to the left */ /* Gives that scrolling effect as the typing happens */
-  animation: typing 3.5s steps(40, end);
+  animation: typing 3.5s steps(40) forwards, blink steps(40) 2s;
 }
-
+/* The typing effect */
 @keyframes typing {
   from {
-    width: 0; /* Start with no width */
+    width: 0%;
+    visibility: visible;
+    opacity: 1;
   }
   to {
-    width: 100%; /* Expand to full width of the container */
+    width: 100%;
+
+    visibility: visible;
+    opacity: 1;
   }
+}
+
+@keyframes blink {
+  from {
+    border-right: 2px green solid;
+  }
+}
+
+.textbox p:nth-child(1) {
+  animation-delay: 0s; /* No delay for the first paragraph */
+}
+
+.textbox p:nth-child(2) {
+  animation-delay: 2s; /* Delay the second paragraph by 0.3s */
 }

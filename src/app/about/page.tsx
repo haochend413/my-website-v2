@@ -6,19 +6,13 @@ function Aboutpage() {
     <>
       <div className={styles["textbox"]}>
         <p className={styles["typewriter"]}>: &nbsp;My name is Haochen Ding.</p>
-      </div>
-      <div className={styles["textbox"]}>
         <p className={styles["typewriter"]}>
           : &nbsp;I am a Sophomore in University of Illinois, Urbana-Champaign.
         </p>
-      </div>
-      <div className={styles["textbox"]}>
         <p className={styles["typewriter"]}>
           : &nbsp;I am currently pursuing a Bachelor's Degree in Computer
           Engineering.
         </p>
-      </div>
-      <div className={styles["textbox"]}>
         <p className={styles["typewriter"]}>: &nbsp;Nice to meet you all!</p>
       </div>
 

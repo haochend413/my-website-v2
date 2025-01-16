@@ -20,44 +20,63 @@
   margin-bottom: 10px;
   height: 100%;
   justify-content: center;
+
   color: rgb(13, 255, 0);
   padding-left: 5px;
   box-sizing: border-box;
-  border: 1px transparent solid;
 }
 
-.textbox:hover {
-  border: rgb(74, 74, 74) 1px solid;
+.textbox p {
+  border: 1px transparent solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.textbox p:hover {
+  border: 1px rgb(74, 74, 74), solid;
 }
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   text-align: left; /* Ensures the text is aligned to the left */ /* Gives that scrolling effect as the typing happens */
-  animation: typing 3.5s steps(40, end);
+  animation: typing 3.5s steps(40) forwards, blink steps(40) 2s;
 }
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0;
+    width: 0%;
+    visibility: visible;
+    opacity: 1;
   }
   to {
     width: 100%;
+
+    visibility: visible;
+    opacity: 1;
   }
 }
 
-section:nth-child(1) .typewriter {
-  animation-delay: 2s; /* First one appears immediately */
+@keyframes blink {
+  from {
+    border-right: 2px green solid;
+  }
 }
 
-section:nth-child(2) .typewriter {
-  animation-delay: 3.5s; /* Second one starts after 3.5s */
+.textbox p:nth-child(1) {
+  animation-delay: 0s; /* No delay for the first paragraph */
 }
 
-section:nth-child(3) .typewriter {
-  animation-delay: 7s; /* Third one starts after 7s */
+.textbox p:nth-child(2) {
+  animation-delay: 1s; /* Delay the second paragraph by 0.3s */
 }
 
-section:nth-child(4) .typewriter {
-  animation-delay: 10.5s; /* Fourth one starts after 10.5s */
+.textbox p:nth-child(3) {
+  animation-delay: 2.5s; /* Delay the third paragraph by 0.6s */
+}
+
+.textbox p:nth-child(4) {
+  animation-delay: 4.2s; /* Delay the fourth paragraph by 0.9s */
 }
