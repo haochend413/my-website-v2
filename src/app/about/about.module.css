@@ -42,7 +42,7 @@
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   text-align: left; /* Ensures the text is aligned to the left */ /* Gives that scrolling effect as the typing happens */
-  animation: typing 3.5s steps(40) forwards, blink steps(40) 2s;
+  animation: typing 3.5s steps(100) forwards, blink steps(40) forwards;
 }
 /* The typing effect */
 @keyframes typing {
@@ -53,7 +53,6 @@
   }
   to {
     width: 100%;
-
     visibility: visible;
     opacity: 1;
   }
@@ -61,6 +60,9 @@
 
 @keyframes blink {
   from {
+    border-right: 2px green solid;
+  }
+  to {
     border-right: 2px green solid;
   }
 }
