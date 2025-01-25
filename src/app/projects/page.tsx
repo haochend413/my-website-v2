@@ -24,6 +24,16 @@ function Experiencepage() {
       {/* this can be done with .map() function; */}
       <div className={styles["gallery-container"]}>
         <Item
+          link="https://github.com/haochend413/Particle_Filter"
+          align={1}
+          imglink={"/particle_filter.png"}
+          imgname={"Particle_filter"}
+          project_title={"Particle Filter"}
+          project_description={
+            "Applications based on particle filter algorithm. (SP 2025 URAP)"
+          }
+        />
+        <Item
           link="/ECE_198_Final_Report.pdf"
           align={0}
           imglink={"/PID_HGV_1.png"}
