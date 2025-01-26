@@ -36,6 +36,7 @@
 
 .textbox p:hover {
   border: 1px rgb(74, 74, 74), solid;
+  color: yellow;
 }
 
 .typewriter {
