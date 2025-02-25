@@ -79,6 +79,16 @@ function Experiencepage() {
           project_title={"Personal Website V2"}
           project_description={"V2 website with Next.js, React and Vercel"}
         />
+        <Item
+          link="https://github.com/haochend413/PathForms"
+          align={1}
+          imglink={"/pathforms.png"}
+          imgname={"PathForms"}
+          project_title={"PathForms"}
+          project_description={
+            "Visualization of Nielson Transformation in group theory"
+          }
+        />
       </div>
     </>
   );
